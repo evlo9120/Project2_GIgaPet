@@ -126,3 +126,18 @@ console.log("Mayonaise Donut");
 console.groupEnd();
 
 console.log("%cStyled text", "color: white; background: purple; font-size: 20px;");
+
+// 1. 404 Network Error - page load
+fetch('/api/pet-stats-does-not-exist');
+
+// 2. TypeError: Treat is clicked
+$('.treat-button').click(function () {
+  let missingPet = null;
+  console.log(missingPet.name); // null
+});
+
+// 3. Violation: Exercise is clicked
+$('.exercise-button').click(function () {
+  const start = Date.now();
+  while (Date.now() - start < 500) {} // blocks for 500ms
+});
