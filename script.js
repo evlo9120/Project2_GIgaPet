@@ -105,4 +105,24 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
       $('.happiness').text(pet_info['happiness']);
       $('.illness').text(pet_info['illness']);
     }
-  
+
+
+console.info("GigPet loaded");
+console.log("Goku is ready!");
+console.warn("Illness increasing");
+console.error("Illness reached a critical level");
+
+console.table([
+  { stat: "Power Level", value: 9000 },
+  { stat: "Happiness", value: 55 },
+  { stat: "Illness", value: 45 }
+]);
+
+console.group("Pet's Options");
+console.log("Treat");
+console.log("Play");
+console.log("Exercise");
+console.log("Mayonaise Donut");
+console.groupEnd();
+
+console.log("%cStyled text", "color: white; background: purple; font-size: 20px;");
