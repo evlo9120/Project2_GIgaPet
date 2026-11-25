@@ -43,7 +43,7 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
     
     function clickedPlayButton() {
       // Increase pet happiness
-      pet_info.happiness += 30;
+      pet_info.happiness += 30; // bug removed
       // Decrease pet power level
       pet_info.power_level -= 900;
       // Decrease pet illness
